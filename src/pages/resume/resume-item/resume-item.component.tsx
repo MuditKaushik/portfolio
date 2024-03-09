@@ -1,4 +1,4 @@
-import { Component, PropsWithChildren, ReactNode, FC, Fragment } from 'react';
+import { Component, FC, Fragment, PropsWithChildren, ReactNode } from 'react';
 import { SvgIconComponent } from '../../../shared/components/svg-icons/svg-icon.component';
 
 export interface IUserLink {
@@ -83,7 +83,7 @@ export class ResumeItemComponent extends Component<IResumeItemProperty>{
         {
           this.props.link && <p>
             <em>
-              <a className='text-decoration-none' href={this.props.link.url} target='_blank'>
+              <a className='text-decoration-none' href={this.props.link.url} target='_blank' rel="noreferrer">
                 {this.props.link.name}
               </a>
             </em>

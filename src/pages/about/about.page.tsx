@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 interface IAboutPageState {
   skills: Array<{ name: string, cover: number }>;
@@ -8,16 +8,16 @@ export class AboutPage extends React.Component<any, IAboutPageState> {
   constructor(props: any) {
     super(props);
     this.state = {
-      skills: new Array({ name: 'ReactJs', cover: 60 },
-        { name: 'Angular', cover: 80 },
-        { name: 'Rust', cover: 40 },
-        { name: 'JavaScript', cover: 85 },
-        { name: 'TypeScript', cover: 75 },
-        { name: 'Nodejs', cover: 70 },
-        { name: 'AWS Lambda', cover: 60 },
-        { name: 'AWS EC2', cover: 60 },
-        { name: 'ExpressJs', cover: 80 },
-        { name: 'Docker', cover: 65 },)
+      skills: [{ name: 'ReactJs', cover: 60 },
+      { name: 'Angular', cover: 80 },
+      { name: 'Rust', cover: 40 },
+      { name: 'JavaScript', cover: 85 },
+      { name: 'TypeScript', cover: 75 },
+      { name: 'Nodejs', cover: 70 },
+      { name: 'AWS Lambda', cover: 60 },
+      { name: 'AWS EC2', cover: 60 },
+      { name: 'ExpressJs', cover: 80 },
+      { name: 'Docker', cover: 65 }]
     };
   }
   getColorScheme(skillCoved: number) {

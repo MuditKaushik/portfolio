@@ -1,7 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { NavLink } from 'react-router-dom';
 import './profile-links.component.scss';
-import { SvgIconComponent } from '../svg-icons/svg-icon.component';
 
 interface ILinkModel {
   name: string;

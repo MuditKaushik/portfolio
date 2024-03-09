@@ -17,12 +17,12 @@ export const UserProfile: React.FC<PropsWithChildren> = (props) => {
       </svg> */}
       <h4 className='fw-normal'>Mudit Kaushik</h4>
       <div className='d-flex flex-row justify-content-center align-items-center gap-2'>
-        <a href="https://github.com/MuditKaushik" target='_blank' className='pe-auto' title='Github'>
+        <a href="https://github.com/MuditKaushik" target='_blank' className='pe-auto' title='Github' rel='noreferrer'>
           <SvgIconComponent className='pe-none' width={20} height={20}>
             <use xlinkHref={'#github'} />
           </SvgIconComponent>
         </a>
-        <a href="https://www.linkedin.com/in/mudit-kaushik-62939a3a" target='_blank'  title='Linkedin'>
+        <a href="https://www.linkedin.com/in/mudit-kaushik-62939a3a" target='_blank'  title='Linkedin' rel='noreferrer'>
           <SvgIconComponent className='pe-none icon-hover' width={20} height={20} fill='currentColor'>
             <use xlinkHref={'#linkedin'} />
           </SvgIconComponent>

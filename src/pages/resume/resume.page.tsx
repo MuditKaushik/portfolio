@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
-import './resume.page.scss';
+import React from 'react';
 import { ResumeItemComponent } from './resume-item/resume-item.component';
+import './resume.page.scss';
 
 export class ResumePage extends React.Component {
   render() {

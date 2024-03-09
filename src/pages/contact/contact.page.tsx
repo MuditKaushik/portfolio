@@ -1,6 +1,6 @@
 import React from 'react';
-import './contact.page.scss';
 import { SvgIconComponent } from '../../shared/components/svg-icons/svg-icon.component';
+import './contact.page.scss';
 
 export class ContactPage extends React.Component {
   render() {
@@ -53,7 +53,7 @@ export class ContactPage extends React.Component {
               <span className='address-location'>
                 <h5>Professional:</h5>
                 <p>
-                  <a href='https://www.linkedin.com/in/mudit-kaushik-62939a3a' target='_blank'>Linkedin</a>
+                  <a href='https://www.linkedin.com/in/mudit-kaushik-62939a3a' target='_blank' rel='noreferrer'>Linkedin</a>
                 </p>
               </span>
             </address>
@@ -68,7 +68,7 @@ export class ContactPage extends React.Component {
               <span className='address-location'>
                 <h5>OpenSource:</h5>
                 <p>
-                  <a href='https://github.com/MuditKaushik' target='_blank'>Github</a>
+                  <a href='https://github.com/MuditKaushik' target='_blank' rel='noreferrer'>Github</a>
                 </p>
               </span>
             </address>
