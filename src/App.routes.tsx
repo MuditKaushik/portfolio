@@ -10,9 +10,7 @@ const routes: Array<RouteObject> = [
     children: [
       {
         index: true,
-        loader: () => {
-          return redirect('/home');
-        }
+        loader: () => redirect('/home')
       },
       {
         path: 'home',
@@ -36,20 +34,6 @@ const routes: Array<RouteObject> = [
         }
       },
       {
-        path: 'portfolio',
-        lazy: async () => {
-          const PortfolioPage = await import('./pages/portfolio/portfolio.page').then(comp => comp.PortfolioPage);
-          return { Component: PortfolioPage };
-        }
-      },
-      {
-        path: 'service',
-        lazy: async () => {
-          const ServicePage = await import('./pages/service/service.page').then(comp => comp.ServicePage);
-          return { Component: ServicePage };
-        }
-      },
-      {
         path: 'contact',
         lazy: async () => {
           const ContactPage = await import('./pages/contact/contact.page').then(comp => comp.ContactPage);
@@ -57,7 +41,11 @@ const routes: Array<RouteObject> = [
         }
       }
     ]
+  },
+  {
+    path: '*',
+    loader: () => redirect('/')
   }
 ];
 
-export const appRoutes = createBrowserRouter(routes);
+export const appRoutes = createBrowserRouter(routes, { basename: '/' });
