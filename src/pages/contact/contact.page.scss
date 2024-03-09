@@ -1,0 +1,32 @@
+address {
+  i {
+    font-size: 20px;
+    color: #149ddd;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #dff3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-left: -5px;
+  }
+
+  h5 {
+    padding: 0 0 0 5px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  span.address-location {
+    p {
+      padding: 0 0 10px 6px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #173b6c;
+    }
+  }
+}
