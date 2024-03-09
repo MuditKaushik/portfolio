@@ -1,5 +1,5 @@
 {
-  "homepage": "http://muditkaushik.github.io/portfolio",
+  "homepage": "https://muditkaushik.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -20,12 +20,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "set \"PUBLIC_URL=.\" && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "set \"GENERATE_SOURCEMAP=false\" && set \"PUBLIC_URL=\"  && react-scripts build --profile",
-    "deploy": "npx gh-pages -b gh-pages -d build"
+    "predeploy": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build --profile",
+    "deploy": "npx gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

@@ -1,8 +1,8 @@
-import { RouteObject, createBrowserRouter, redirect } from 'react-router-dom';
+import { RouteObject, createHashRouter , redirect } from 'react-router-dom';
 
 const routes: Array<RouteObject> = [
   {
-    path: '/',
+    path: 'portfolio',
     lazy: async () => {
       const StartPage = await import('./App').then(comp => comp.App);
       return { Component: StartPage };
@@ -10,7 +10,7 @@ const routes: Array<RouteObject> = [
     children: [
       {
         index: true,
-        loader: () => redirect('/home')
+        loader: () => redirect('home')
       },
       {
         path: 'home',
@@ -43,9 +43,9 @@ const routes: Array<RouteObject> = [
     ]
   },
   {
-    path: '*',
-    loader: () => redirect('/')
+    path: '/',
+    loader: () => redirect('/portfolio')
   }
 ];
 
-export const appRoutes = createBrowserRouter(routes, { basename: '/' });
+export const appRoutes = createHashRouter(routes, { basename: '/' });
