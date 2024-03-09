@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[146],{765:(e,r,c)=>{c.r(r),c.d(r,{ServicePage:()=>ServicePage});var n=c(950),s=c(414);class ServicePage extends n.Component{render(){return(0,s.jsx)(n.Fragment,{children:(0,s.jsx)("h1",{children:"Service"})})}}}}]);
