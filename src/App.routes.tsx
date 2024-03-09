@@ -2,7 +2,7 @@ import { RouteObject, createHashRouter , redirect } from 'react-router-dom';
 
 const routes: Array<RouteObject> = [
   {
-    path: 'portfolio',
+    path: '/',
     lazy: async () => {
       const StartPage = await import('./App').then(comp => comp.App);
       return { Component: StartPage };
@@ -41,10 +41,6 @@ const routes: Array<RouteObject> = [
         }
       }
     ]
-  },
-  {
-    path: '/',
-    loader: () => redirect('/portfolio')
   }
 ];
 

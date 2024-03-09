@@ -13,7 +13,7 @@ export class HomePage extends React.Component {
                 <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
               </clipPath>
             </defs>
-            <image href="/profileimg.jpg" width={160} height={215} x={0} y={-32} clipPath='url(#profileImage)' />
+            <image href={`${process.env.PUBLIC_URL}/profileimg.jpg`} width={160} height={215} x={0} y={-32} clipPath='url(#profileImage)' />
           </svg>
           <h1 className="text-body-emphasis">Mudit Mohan Kaushik</h1>
           <p className="col-lg-6 mx-auto mb-4 justify-content-start" style={{fontSize: '18px', fontWeight: 100}}>
