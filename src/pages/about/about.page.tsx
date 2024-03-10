@@ -1,29 +1,10 @@
 import React from 'react';
-
-interface IAboutPageState {
-  skills: Array<{ name: string, cover: number }>;
-};
-
-export class AboutPage extends React.Component<any, IAboutPageState> {
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      skills: [{ name: 'ReactJs', cover: 60 },
-      { name: 'Angular', cover: 80 },
-      { name: 'Rust', cover: 40 },
-      { name: 'JavaScript', cover: 85 },
-      { name: 'TypeScript', cover: 75 },
-      { name: 'Nodejs', cover: 70 },
-      { name: 'AWS Lambda', cover: 60 },
-      { name: 'AWS EC2', cover: 60 },
-      { name: 'ExpressJs', cover: 80 },
-      { name: 'Docker', cover: 65 }]
-    };
-  }
+import { AboutSkillList } from '../../model/about.model';
+export class AboutPage extends React.Component {
   getColorScheme(skillCoved: number) {
     return (skillCoved < 70) ? 'bg-info' : String();
   };
-  createSkillsBadge(skill: string, index:number) {
+  createSkillsBadge(skill: string, index: number) {
     return (<span key={index} className="badge bg-primary-subtle text-primary-emphasis rounded-pill">{skill}</span>);
   };
   render() {
@@ -37,7 +18,7 @@ export class AboutPage extends React.Component<any, IAboutPageState> {
               Throughout my career, I've honed my skills in various programming languages and frameworks,
               gaining expertise in
               {
-                this.state.skills.map((skill,indx) => this.createSkillsBadge(skill.name, indx))
+                AboutSkillList.map((skill, indx) => this.createSkillsBadge(skill.name, indx))
               }.
             </p>
             <p>
@@ -55,15 +36,15 @@ export class AboutPage extends React.Component<any, IAboutPageState> {
           </p>
           <div className='row row-cols-2 mt-3 mb-3'>
             {
-              this.state.skills.map((skill, index) => {
+              AboutSkillList.map((skill, index) => {
                 return (
                   <div className='col-12 col-md-6 col-lg-6' key={index}>
                     <div className='d-flex justify-content-between align-content-between'>
                       <span className='fs-6 fw-semibold mx-1'>{skill.name}</span>
-                      <span className='fs-6 fw-semibold mx-1'>{skill.cover}%</span>
+                      <span className='fs-6 fw-semibold mx-1'>{skill.coverage}%</span>
                     </div>
-                    <div className="progress" role="progressbar" aria-label="Basic example" aria-valuenow={skill.cover} aria-valuemin={0} aria-valuemax={100} style={{ height: '10px', marginTop: '5px' }}>
-                      <div className={`progress-bar ${this.getColorScheme(skill.cover)}`} style={{ width: `${skill.cover}%` }}></div>
+                    <div className="progress" role="progressbar" aria-label="Basic example" aria-valuenow={skill.coverage} aria-valuemin={0} aria-valuemax={100} style={{ height: '10px', marginTop: '5px' }}>
+                      <div className={`progress-bar ${this.getColorScheme(skill.coverage)}`} style={{ width: `${skill.coverage}%` }}></div>
                     </div>
                   </div>
                 )
