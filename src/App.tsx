@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, ScrollRestoration } from 'react-router-dom';
 import './App.scss';
 import { ProfileLinksComponent } from './shared/components/profile-links/profile-links.component';
 import { SvgSymbolsComponent } from './shared/components/svg-symbols/svg.symbols.component';
@@ -38,6 +38,7 @@ export const App: React.FC<PropsWithChildren> = (props) => {
       <main className='container mt-5'>
         <div className='row justify-content-center align-content-center'>
           <div className='col-12 col-md-9 col-lg-10'>
+            <ScrollRestoration />
             <Outlet />
           </div>
         </div>

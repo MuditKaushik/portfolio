@@ -23,8 +23,8 @@ export class AboutPage extends React.Component<any, IAboutPageState> {
   getColorScheme(skillCoved: number) {
     return (skillCoved < 70) ? 'bg-info' : String();
   };
-  createSkillsBadge(skill: string) {
-    return (<span className="badge bg-primary-subtle text-primary-emphasis rounded-pill">{skill}</span>);
+  createSkillsBadge(skill: string, index:number) {
+    return (<span key={index} className="badge bg-primary-subtle text-primary-emphasis rounded-pill">{skill}</span>);
   };
   render() {
     return (
@@ -37,7 +37,7 @@ export class AboutPage extends React.Component<any, IAboutPageState> {
               Throughout my career, I've honed my skills in various programming languages and frameworks,
               gaining expertise in
               {
-                this.state.skills.map((skill) => this.createSkillsBadge(skill.name))
+                this.state.skills.map((skill,indx) => this.createSkillsBadge(skill.name, indx))
               }.
             </p>
             <p>

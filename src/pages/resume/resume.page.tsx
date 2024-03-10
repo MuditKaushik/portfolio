@@ -13,7 +13,7 @@ export class ResumePage extends React.Component {
           Eager to contribute to a team environment and build innovative solutions that drive results.
         </p>
         <div className='row resume'>
-          <div className='col-12 col-lg-8'>
+          <div className='col-12 col-lg-8 mb-3'>
             <h3 className='fw-bold my-1 mb-2'>Professional Experience</h3>
             <ResumeItemComponent
               heading={'Lead Software Engineer Integration'}
