@@ -4,26 +4,6 @@ import './App.scss';
 import { ProfileLinksComponent } from './shared/components/profile-links/profile-links.component';
 import { SvgSymbolsComponent } from './shared/components/svg-symbols/svg.symbols.component';
 
-// import { DrawerComponent } from './shared/components/drawer-modal/drawer.component';
-// import { UserProfile } from './shared/components/profile/profile.component';
-// const AppHeader: React.FC<PropsWithChildren> = (props) => {
-//   const targetLinkContainerId = 'app-link-container-target';
-//   return (
-//     <nav className="navbar">
-//       <div className="container-fluid justify-content-end">
-//         <button className="navbar-toggler focus-ring focus-ring-light" type="button" data-bs-toggle="offcanvas" data-bs-target={`#${targetLinkContainerId}`} aria-controls={targetLinkContainerId}>
-//           <span className="navbar-toggler-icon"></span>
-//         </button>
-//         <DrawerComponent
-//           drawerChild={<UserProfile />}
-//           targetElementId={targetLinkContainerId}>
-//           <ProfileLinksComponent />
-//         </DrawerComponent>
-//       </div>
-//     </nav>
-//   );
-// };
-
 export const App: React.FC<PropsWithChildren> = (props) => {
   return (
     <React.Fragment>

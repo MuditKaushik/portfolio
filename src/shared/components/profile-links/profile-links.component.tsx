@@ -41,11 +41,6 @@ export const ProfileLinksComponent: React.FC<PropsWithChildren> = (props) => {
     }
     return (
       <NavLink to={{ pathname: link.routePath }} className={({ isActive }) => isLinkActive(isActive)} key={keyIndex}>
-        {/* {
-          link.icon && <SvgIconComponent className='bi pe-none me-2' width={16} height={16}>
-            <use xlinkHref={`#${link.icon}`} />
-          </SvgIconComponent>
-        } */}
         <span>
           {link.name}
         </span>

@@ -48,7 +48,7 @@ export const ResumeEducationalDataList: Array<IResumeModel> = [
 export const ResumeProfessionalDataList: Array<IResumeModel> = [
   {
     heading: 'Lead Software Engineer Integration',
-    subHeading: 'March 2021 - Present',
+    subHeading: 'March 2021 - June 2024',
     link: { name: 'LeadSquared, Bangalore', url: 'https://www.leadsquared.com/' },
     professionalDetails: {
       clientProjects: ['Poonawalla Finance'],
@@ -66,7 +66,7 @@ export const ResumeProfessionalDataList: Array<IResumeModel> = [
         'Implemented end-to-end POCs for migrating documents from one system to another system.',
         'Helping cross team members to integrate Salesforce and Setup AWS lambda functions.'
       ],
-      technology: ['ReactJs', 'Nodejs', 'Python', 'AWS Lambda', 'AWS EC2']
+      technology: ['ReactJs', 'Nodejs', 'Express.js', 'Python', 'AWS Lambda', 'AWS EC2', 'MongoDB']
     }
   },
   {
@@ -82,7 +82,7 @@ export const ResumeProfessionalDataList: Array<IResumeModel> = [
       ],
       achievements: [],
       highlights: [],
-      technology: ['Angular 12', 'Bootstrap', 'Typescript', 'JavaScript', 'NgRx', 'RxJs', 'Webpack', 'Nodejs', 'AWS Lambda', 'AWS EC2']
+      technology: ['Angular 12','Nodejs','Typescript', 'JavaScript','Jest', 'AWS Lambda', 'AWS EC2', 'MySQL', 'Bootstrap', 'NgRx', 'RxJs', 'Webpack']
     }
   },
   {
@@ -107,7 +107,7 @@ export const ResumeProfessionalDataList: Array<IResumeModel> = [
         'Integrated Google G-suite.',
         'Refactored and added new features to already existing assignment module.'
       ],
-      technology: ['Angular 6', 'TypeScript', 'RxJs', 'NgRx', 'Node.js', 'MySQL DB', 'Bootstrap', 'Webpack']
+      technology: ['Angular 6', 'Node.js', 'TypeScript', 'RxJs', 'NgRx', 'MySQL', 'Chai', 'Mocha', 'Sinon', 'Bootstrap', 'Webpack']
     }
   },
   {
@@ -122,7 +122,7 @@ export const ResumeProfessionalDataList: Array<IResumeModel> = [
       ],
       achievements: [],
       highlights: [],
-      technology: ['C#', 'ASP.NET MVC Razor 5', 'EntityFramework ORM', 'LINQ', 'JavaScript', 'jQuery', 'Bootstrap']
+      technology: ['C#', 'ASP.NET MVC Razor 5', 'EntityFramework ORM', 'LINQ', 'MSSQL Server', 'JavaScript', 'jQuery', 'Bootstrap']
     }
   },
   {
@@ -137,7 +137,7 @@ export const ResumeProfessionalDataList: Array<IResumeModel> = [
       ],
       achievements: [],
       highlights: [],
-      technology: ['C#', 'ASP.NET MVC Razor 5', 'EntityFramework ORM', 'ASP.NET Web APIs C#', 'LINQ', 'JavaScript', 'jQuery', 'Bootstrap']
+      technology: ['C#', 'ASP.NET MVC Razor 5', 'EntityFramework ORM', 'ASP.NET Web APIs C#', 'LINQ', 'MSSQL Server', 'JavaScript', 'jQuery', 'Bootstrap']
     }
   },
   {
@@ -152,7 +152,7 @@ export const ResumeProfessionalDataList: Array<IResumeModel> = [
       ],
       achievements: [],
       highlights: [],
-      technology: ['ASP.NET Web Forms', 'SQL Server 2008']
+      technology: ['ASP.NET Web Forms', 'MS SQL Server 2008']
     }
   }
 ]; 

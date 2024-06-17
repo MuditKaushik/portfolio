@@ -1,11 +1,12 @@
 import React from 'react';
-import { AboutSkillList } from '../../model/about.model';
+import { AboutSkillList, TotalExperience } from '../../model/about.model';
+import './about.page.scss';
 export class AboutPage extends React.Component {
   getColorScheme(skillCoved: number) {
     return (skillCoved < 70) ? 'bg-info' : String();
   };
   createSkillsBadge(skill: string, index: number) {
-    return (<span key={index} className="badge bg-primary-subtle text-primary-emphasis rounded-pill">{skill}</span>);
+    return (<span key={index} className="badge bg-primary-subtle text-primary-emphasis rounded-pill pill-gaps">{skill}</span>);
   };
   render() {
     return (
@@ -14,7 +15,7 @@ export class AboutPage extends React.Component {
           <h3 className='page-heading-title'>Summary</h3>
           <div className='mt-4 mb-3'>
             <p>
-              I'm a passionate developer with 10 years of experience crafting web applications and software solutions.
+              I'm a passionate developer with {TotalExperience} years of experience crafting web applications and software solutions.
               Throughout my career, I've honed my skills in various programming languages and frameworks,
               gaining expertise in
               {
@@ -30,7 +31,7 @@ export class AboutPage extends React.Component {
         <div id="about-skills">
           <h3 className='page-heading-title'>Skills</h3>
           <p className='mt-4'>
-            In my 10 years of experience as a developer,
+            In my {TotalExperience} years of experience as a developer,
             I've had the opportunity to work with a variety of programming languages,
             each offering unique strengths and suited to specific aspects of web application development.
           </p>

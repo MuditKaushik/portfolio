@@ -30,5 +30,11 @@ export const ContactDetailList:Array<IContactDetail> = [
     text: undefined,
     icon: 'github',
     link: {name: 'Github', url: 'https://github.com/MuditKaushik'}
+  },
+  {
+    heading: 'Resume',
+    text: undefined,
+    icon: 'resume',
+    link: {name: 'Download', url: `${process.env.PUBLIC_URL}/resume_public_2024.pdf`}
   }
 ];

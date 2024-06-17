@@ -18,12 +18,13 @@ export class ContactPage extends React.Component {
             contact.text && <p>{contact.text}</p>
           }
           {
-            contact.link && <p><a href={contact.link.url}>{contact.link.name}</a></p>
+            contact.link && <p><a href={contact.link.url} target='_blank'>{contact.link.name}</a></p>
           }
         </span>
       </address>
     );
   };
+
   render() {
     return (
       <div className='my-3'>
@@ -37,7 +38,7 @@ export class ContactPage extends React.Component {
           {
             ContactDetailList.map((contact, index) => {
               return (
-                <div className='col col-lg-6' key={index}>
+                <div className='col-10 col-lg-6' key={index}>
                   {this.createContactAddress(contact)}
                 </div>
               );

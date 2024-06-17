@@ -1,5 +1,6 @@
 import { Component, FC, Fragment, PropsWithChildren, ReactNode } from 'react';
 import { SvgIconComponent } from '../../../shared/components/svg-icons/svg-icon.component';
+import './resume-item.component.scss';
 
 export interface IUserLink {
   url: string;
@@ -65,7 +66,7 @@ const ProfessionalDetailComponent: FC<PropsWithChildren<IProfessionalItem>> = (p
       <h5 className='resume-item-sub-heading'>Technology :</h5>
       <div className='justify-content-start mx-1'>
         {
-          props.technology.map((technology, index) => <span className="badge bg-primary-subtle text-primary-emphasis rounded-pill" key={index}>{technology}</span>)
+          props.technology.map((technology, index) => <span className="badge bg-primary-subtle text-primary-emphasis rounded-pill pill-gaps" key={index}>{technology}</span>)
         }
       </div>
     </Fragment >
